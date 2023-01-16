@@ -1,0 +1,10 @@
+pipeline:
+  BUILD:
+    image: node:8.10
+    commands:
+      - npm
+
+  TEST:
+    image: node:8.10
+    commands:
+      -  echo "test"
