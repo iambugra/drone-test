@@ -7,8 +7,10 @@ steps:
   image: alpine
   commands:
   - echo hello world
+  - sleep 50
 
 - name: fr
   image: alpine
   commands:
   - echo bonjour monde
+  - sleep 50
