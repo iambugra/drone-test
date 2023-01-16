@@ -1,10 +1,14 @@
-pipeline:
-  BUILD:
-    image: node:8.10
-    commands:
-      - npm
+kind: pipeline
+type: kubernetes
+name: greeting
 
-  TEST:
-    image: node:8.10
-    commands:
-      -  echo "test"
+steps:
+- name: en
+  image: alpine
+  commands:
+  - echo hello world
+
+- name: fr
+  image: alpine
+  commands:
+  - echo bonjour monde
