@@ -7,7 +7,7 @@ steps:
   image: alpine
   commands:
   - echo hello world
-  - sleep 50
+  - sleep 20
 
 - name: fr
   image: alpine
